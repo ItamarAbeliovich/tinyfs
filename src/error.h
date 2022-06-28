@@ -9,6 +9,6 @@ typedef enum rc_e {
     BAD_NODE_INDEX,
     BAD_FILENAME,
     END_OF_FILE
-}
+} rc_t;
 
 #endif

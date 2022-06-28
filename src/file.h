@@ -23,7 +23,7 @@ typedef struct file_handle_s {
     char mode;
 } file_handle_t;
 
-rc_t open(file_t *file, char mode, file_stream_t *out_handle);
+rc_t open(file_t *file, char mode, file_handle_t *out_handle);
 rc_t close(file_handle_t *handle);
 rc_t read(file_handle_t *handle, uint32_t bytes_to_read, void *out_buffer);
 rc_t write(file_handle_t *handle, uint32_t bytes_to_write, void *in_buffer);
